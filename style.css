@@ -1,0 +1,100 @@
+body {
+    font-family:sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    background: #203a43;
+    color: #eee;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00f7ff;
+    margin-bottom: 20px;
+  }
+  
+  #from {
+    font-size: 20px;
+    color: #a5f3fc;
+    margin-bottom: 40px;
+    display: block;
+  }
+  
+  button {
+    color: rgb(119, 91, 91);
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    width: 200px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  #output {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  .Binary {
+    background: #66ccff;
+  }
+  
+  .Octaly {
+    background: #ffb3e6;
+  }
+  
+  .Decimal {
+    background: #b3c9ff;
+  }
+  
+  .Hex {
+    background: #aaffaa;
+  }
+  
+  .Binary:hover {
+    background: #33aaff;
+  }
+  
+  .Octaly:hover {
+    background: #ff80c2;
+  }
+  
+  .Decimal:hover {
+    background: #99c2ff;
+  }
+  
+  .Hex:hover {
+    background: #66cc66;
+  }
+  .result{
+
+    color: #030000;
+    background-color: indianred;
+  }  
+  .input-container {
+    margin-bottom: 20px;
+}
+
+.styled-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00f7ff;
+    border-radius: 10px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+.styled-input:focus {
+    border-color: #66ccff;
+    outline: none;
+}
