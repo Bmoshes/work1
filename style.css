@@ -114,36 +114,20 @@ body {
   }
   
   @media (max-width: 768px) {
-    body {
-      margin: 0; /* מבטל שוליים מיותרים */
-      padding: 0; /* מבטל רווחים מיותרים */
-    }
-  
-    #from,
-    #to {
-      font-size: 20px; /* מקטין את גודל הטקסט */
-      margin: 10px 0; /* מפחית את השוליים */
-    }
-  
-    #from-buttons,
-    #to-buttons {
-      width: 100%; /* תופס את כל רוחב המסך */
-      padding: 0 10px; /* מוסיף רווח פנימי */
-    }
-  
-    button {
-      width: 90%; /* הכפתורים יתפסו 90% מרוחב המסך */
-      margin: 5px auto; /* מרכז את הכפתורים */
-    }
-  
-    input[type="text"] {
-      width: 90%; /* שדה הטקסט יתפוס 90% מרוחב המסך */
-      margin: 10px auto; /* מרכז את שדה הטקסט */
-      display: block; /* מבטיח שהשדה יהיה בשורה נפרדת */
-    }
-  
-    #output {
-      font-size: 1em; /* מקטין את גודל הטקסט של התוצאה */
-      margin: 10px; /* מפחית את השוליים */
-    }
-  }sf
+  #from-buttons,
+  #to-buttons {
+    flex-direction: column; /* מסדר את הכפתורים בטור במקום בשורה */
+    gap: 15px; /* רווח גדול יותר בין הכפתורים */
+  }
+
+  button {
+    width: 100%; /* הכפתורים יתפסו את כל רוחב המסך */
+    max-width: 300px; /* מגבלה לרוחב מקסימלי */
+  }
+
+  #from-buttons span,
+  #to-buttons b {
+    margin-right: 0; /* מבטל את הרווח הימני */
+    margin-bottom: 10px; /* מוסיף רווח מתחת לכותרת */
+  }
+}
