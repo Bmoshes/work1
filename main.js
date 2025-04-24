@@ -10,7 +10,7 @@ const output = document.getElementById("output");
 function updateSelectedButton(buttons, selectedBase) {
   buttons.forEach((btn) => {
     if (Number(btn.dataset.base) === selectedBase) {
-      btn.style.transform = "scale(1.2)";
+      btn.style.transform = "scale(1.25)";
     } else {
       btn.style.transform = "scale(1)";
     }
