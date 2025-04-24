@@ -32,7 +32,7 @@ body {
     margin-bottom: 40px;
     display: block;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 28px;
   }
   #from-buttons,
 #to-buttons {
@@ -108,23 +108,12 @@ body {
     color: #030000;
     background-color: indianred;
   }  
-  .input-container {
-    margin-bottom: 20px;
-}
-
-.styled-input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #00f7ff;
-    border-radius: 10px;
-    width: 200px;
-    transition: border-color 0.3s ease;
-}
-
-.styled-input:focus {
-    border-color: #66ccff;
-    outline: none;
-}
+  input[type="text"] {
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  
 #from-buttons,
 #to-buttons {
     display: flex;
