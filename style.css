@@ -113,17 +113,21 @@ body {
     border-radius: 8px;
   }
   
+  @media (max-width: 768px) {
+    #from-buttons,
+    #to-buttons {
+      flex-direction: column;
+      gap: 15px; 
+    }
   
-#from-buttons,
-#to-buttons {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    gap: 10px; 
-}
-
-#from-buttons span,
-#to-buttons b {
-    margin-right: 10px; 
-    font-weight: bold;
-}
+    button {
+      width: 100%; 
+      max-width: 300px; 
+    }
+  
+    #from-buttons span,
+    #to-buttons b {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  }
