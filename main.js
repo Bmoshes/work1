@@ -7,6 +7,7 @@ const inputNumber = document.getElementById("numberbefor");
 const convertBtn = document.querySelector(".result");
 const output = document.getElementById("output");
 
+// Highlights the selected base button by scaling it up
 function updateSelectedButton(buttons, selectedBase) {
   buttons.forEach((btn) => {
     if (Number(btn.dataset.base) === selectedBase) {
@@ -17,6 +18,7 @@ function updateSelectedButton(buttons, selectedBase) {
   });
 }
 
+// Adds click event listeners to base selection buttons (from base)
 fromButtons.forEach((btn) => {
   btn.addEventListener("click", function () {
     fromBase = Number(btn.dataset.base);
@@ -24,6 +26,7 @@ fromButtons.forEach((btn) => {
   });
 });
 
+// Adds click event listeners to base selection buttons (to base)
 toButtons.forEach((btn) => {
   btn.addEventListener("click", function () {
     toBase = Number(btn.dataset.base);
@@ -31,6 +34,7 @@ toButtons.forEach((btn) => {
   });
 });
 
+// Validates the input number according to the selected base
 function isValidInput(input, base) {
   const regex = {
     2: /^[01]+$/,
@@ -41,10 +45,12 @@ function isValidInput(input, base) {
   return regex[base].test(input);
 }
 
+// Converts a number from one base to another
 function convertBase(num, fromBase, toBase) {
   return parseInt(num, fromBase).toString(toBase).toUpperCase();
 }
 
+// Handles the conversion when the user clicks the "convert" button
 convertBtn.addEventListener("click", function () {
   const input = inputNumber.value.trim();
   if (!isValidInput(input, fromBase)) {
@@ -58,5 +64,3 @@ convertBtn.addEventListener("click", function () {
   output.innerHTML = `Result: ${input}<sub>${fromBase}</sub> = ${converted}<sub>${toBase}</sub>`;
   inputNumber.value = "";
 });
-
-
