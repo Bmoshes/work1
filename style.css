@@ -114,20 +114,26 @@ body {
   }
   
   @media (max-width: 768px) {
-  #from-buttons,
-  #to-buttons {
-    flex-direction: column; /* מסדר את הכפתורים בטור במקום בשורה */
-    gap: 15px; /* רווח גדול יותר בין הכפתורים */
-  }
+    #from-buttons,
+    #to-buttons {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 0 15px;
+    }
 
-  button {
-    width: 100%; /* הכפתורים יתפסו את כל רוחב המסך */
-    max-width: 300px; /* מגבלה לרוחב מקסימלי */
-  }
+    button {
+        width: 80%; 
+        max-width: 250px;
+        height: 45px;
+        font-size: 16px;
+        margin: 5px auto;
+    }
 
-  #from-buttons span,
-  #to-buttons b {
-    margin-right: 0; /* מבטל את הרווח הימני */
-    margin-bottom: 10px; /* מוסיף רווח מתחת לכותרת */
-  }
+    input[type="text"] {
+        width: 80%;
+        max-width: 300px;
+        padding: 10px;
+        margin: 10px auto;
+        display: block;
+    }
 }
