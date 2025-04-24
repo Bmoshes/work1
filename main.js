@@ -1,5 +1,4 @@
 // Bar Moshe 211704580 , Ofek ben david 206514382 
-
 let fromBase = 10;
 let toBase = 2;
 const fromButtons = document.querySelectorAll("#from-buttons button");
@@ -60,5 +59,4 @@ convertBtn.addEventListener("click", function () {
   inputNumber.value = "";
 });
 
-updateSelectedButton(fromButtons, fromBase);
-updateSelectedButton(toButtons, toBase);
+

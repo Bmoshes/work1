@@ -13,8 +13,21 @@ body {
     color: #00f7ff;
     margin-bottom: 20px;
   }
+  h6 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #a5f3fc;
+    margin-bottom: 20px;
+  }
+
   
   #from {
+    font-size: 20px;
+    color: #a5f3fc;
+    margin-bottom: 40px;
+    display: block;
+  }
+  #to {
     font-size: 20px;
     color: #a5f3fc;
     margin-bottom: 40px;
@@ -99,3 +112,4 @@ body {
     border-color: #66ccff;
     outline: none;
 }
+
